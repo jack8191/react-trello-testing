@@ -2,6 +2,13 @@ language: node_js
 node_js: node
 cache:
   directories:
-    - node_modules
+  - node_modules
 env:
-  - CI=true
+- CI=true
+deploy:
+  provider: heroku
+  api_key:
+    secure: HybIO3bj4mxJWOroI2R02WGD+bZeekLWpc2ro0yyvUkoCIkd3Xe2eHJ/Yqj0Mc8oXh9y2ryW9fT64yUaOP86H23LkEndcbYhZ2I44Bg9N8s1dRrPBPI5ehdYDj2EOPYs3MgiSDvSdXigPsYeK9rYv6rkdPy5kYM+JYh9ibpOgFu0W0g11UasbvdH4xIU6XIa5waWwko6O7qT/kgWZvbJB/2w2p25uW995I+b9k3ucPNHqBE17UY2SBGJmK+jXysxNT7YceI6wKJ5dcWPf3utKKq+Iqnm3+4cs+jcYkidPNcfYLTFMwa7H4G8Gjr3rZ/y6hH88yQ+j0RBIvvnAe16zgfXZoEm/qsfe7V5Z4m3Y9ZPKB4ID756fcQvJXjzqh8sJNEGNWM+IvWnAOioZjaDGmoIRwMALe9XP95Fdr6H6bJtmWcVk41Zl3YPUVuHZ0EETWgnuxO2Yn/hzMGeX/gwFyG0UDMx5Gnyp88kvwyKHfvvxv2w9SDeiGGG43C/mx3FCYzWHdIFZKUjIlUObZEd3/WatVUf81lSqDZWwK7UaLyQdlEdbnf+8adyK36H5mUsbG+0tg32fdpKsjHdQiSdATFkUUmwL2MW+4o33rcbieKLjMCPgQBHLzpWQX9iM0G88cSKSDglnRMksA0M6omC/YfFgW23TGrujX1jsu6SErc=
+  app: evening-springs-90260
+  on:
+    repo: jack8191/react-trello-testing
